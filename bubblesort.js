@@ -1,6 +1,6 @@
-const arr = {};
+const obj = {};
 
-arr.bubbleSort = function (array) {
+obj.bubbleSort = function (array) {
   let sorted = false;
 
   while (!sorted) {
@@ -8,7 +8,7 @@ arr.bubbleSort = function (array) {
 
     for (let i = 0; i < array.length - 1; i++) {
       if (array[i] > array[i + 1]) {
-        arr.swap(array, i);
+        obj.swap(array, i);
         sorted = false;
       }
     }
@@ -17,7 +17,7 @@ arr.bubbleSort = function (array) {
   return array;
 };
 
-arr.swap = function (array, i) {
+obj.swap = function (array, i) {
   const temp = array[i];
 
   array[i] = array[i + 1];
